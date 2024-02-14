@@ -6,11 +6,15 @@
 <meta charset="ISO-8859-1">
 <title>Home Page</title>
 <link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="vev.png">
 
 </head>
 <body>
-	<h1>Welcome to Index Page</h1>
-	<img alt="Image" src="images/fc.jpg" width="100%" height="100%"/>
+	<div class="container-fluid">
+		
+	</div>
+	<h2>Welcome to VEV CODE LAB Page</h2>
+	<img alt="Image" src="images/vev.png"/>
 
 </body>
 </html>
