@@ -14,6 +14,7 @@
         <frame  src="pages/leftnav.jsp" name="fr1">  
         <frame  src="pages/blank.jsp" name="fr2">     
     </frameset>
+    
 
 <body>
 	<div class="container-fluid">	
