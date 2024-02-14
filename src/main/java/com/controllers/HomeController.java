@@ -9,8 +9,8 @@ public class HomeController {
 	
 	
 	@GetMapping("/")
-	public String showNewPage() {
-		return "index";
+	public String showIndexPage() {
+		return "masterfile";
 	}
 	
 }
