@@ -77,7 +77,7 @@
 
   <form action="admin">
   <h2>Login</h2>
-        *Enter AdminID :<input type="text" name="adminid" required/><br>
+        Enter AdminID :<input type="text" name="adminid" required/><br>
         *Enter Password :<input type="password" name="pass" required /><br>
     	<input type="submit" value=" LOGIN "><br>	
     	<div class="failure-message">${key}</div>
