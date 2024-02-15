@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.bean.signUp_bean;
@@ -27,8 +26,13 @@ public class HomeController {
 	}
 	
 	@GetMapping("login")
-	public String showlogin() {
+	public String showUserLogin() {
 		return "User/login";
+	}
+	
+	@GetMapping("adminlogin")
+	public String showAdminLogin() {
+		return "admin/adminlogin";
 	}
 	
 	@GetMapping("formsubmit")
@@ -48,5 +52,16 @@ public class HomeController {
 			m.addAttribute("message", "Failure");
 		
 		return "User/login";
+	}
+	
+	@GetMapping("admin")
+	public String adminVerify(@RequestParam("adminid")String adminid,@RequestParam("pass")String pass,Model m) {
+		if(adminid.equals("Malak") && pass.equals("main")) {
+			return "admin/adminlogin";
+		}
+		else {
+			m.addAttribute("key", "Failure, Try Again");
+			return "admin/adminlogin";
+		}
 	}
 }
