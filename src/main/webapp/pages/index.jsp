@@ -14,7 +14,7 @@
 		
 	</div>
 	<h2>Welcome to VEV CODE LAB Page</h2>
-	<img alt="Image" src="images/vev.png"/>
-
+	<a href="signup" >Signup</a>
+	${key}
 </body>
 </html>
