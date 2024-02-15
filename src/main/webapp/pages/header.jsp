@@ -15,7 +15,7 @@
 		  <div class="row">
 		  	<div class="col-3">
 		  		<a class="navbar-brand" href="#">
-			      <img src="images/vevlogo.png" alt="VEV CODE LAB" width="100%" height="70%">
+			      <img src="images/vevlogo.png" alt="VEV CODE LAB" width="100%">
 			    </a>
 		  	</div>
 		  	<div class="col-8" style="align-content: center;">
@@ -24,10 +24,10 @@
 				    <a class="nav-link active" aria-current="page" href="pages/mainpage.jsp">Home</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="signup">Student</a>
+				    <a class="nav-link" href="login">Student</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="#">Admin Login</a>
+				    <a class="nav-link" href="#">Admin</a>
 				  </li>
 				</ul>
 		  	</div>

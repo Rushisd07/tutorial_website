@@ -26,6 +26,11 @@ public class HomeController {
 		return "User/signup";
 	}
 	
+	@GetMapping("login")
+	public String showlogin() {
+		return "User/login";
+	}
+	
 	@GetMapping("formsubmit")
 	public String StoreSignupData(@RequestParam("fname")String fname,@RequestParam("lname")String lname,@RequestParam("email")String email,@RequestParam("city")String city,@RequestParam("pincode")Integer pincode,@RequestParam("userid")String userid,@RequestParam("pass")String pass,Model m) {
 		signUp_bean sub = new signUp_bean();
@@ -42,6 +47,6 @@ public class HomeController {
 		else
 			m.addAttribute("message", "Failure");
 		
-		return "index";
+		return "User/login";
 	}
 }

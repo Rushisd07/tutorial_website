@@ -63,9 +63,9 @@
 </style>
 </head>
 <body>
+	<jsp:include page="/pages/header.jsp"/>
 <div class="row">
 	<div class="col-12">
-		<jsp:include page="/pages/header.jsp"/>
   <h2>Create Account</h2>
 
   <form action="formsubmit">
@@ -77,7 +77,7 @@
         *Enter UserID :<input type="text" name="userid" required/><br>
         *Enter Password :<input type="password" name="pass" required /><br>
     	<input type="submit" value=" SIGN UP "><br>
-        <a href="login">Already have an account? Login In</a>	
+        <a href="login">Already have an account? Login</a>	
   </form>
 	</div>
 
