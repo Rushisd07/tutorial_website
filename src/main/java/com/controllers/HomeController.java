@@ -10,7 +10,7 @@ public class HomeController {
 	
 	@GetMapping("/")
 	public String showIndexPage() {
-		return "masterfile";
+		return "index";
 	}
 	
 }
