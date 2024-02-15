@@ -9,10 +9,10 @@
 </head> 
 	
 	<frameset rows="8%,92%">  
-		<frame  src="pages/header.jsp">  
+		<frame  src="header.jsp">  
     <frameset cols="20%,80%">  
-        <frame  src="pages/leftnav.jsp" name="fr1">  
-        <frame  src="pages/blank.jsp" name="fr2">     
+        <frame  src="leftnav.jsp" name="fr1">  
+        <frame  src="blank.jsp" name="fr2">     
     </frameset>
     
 
