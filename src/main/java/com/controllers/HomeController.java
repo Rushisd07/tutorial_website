@@ -20,7 +20,7 @@ public class HomeController {
 //	UserService ser;
 	
 	@GetMapping("/")
-	public String showNewPage() {
+	public String showIndexPage() {
 		return "index";
 	}
 	
