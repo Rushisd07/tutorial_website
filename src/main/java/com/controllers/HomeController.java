@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.bean.signUp_bean;
 import com.service.UserService;
@@ -17,7 +18,7 @@ import com.service.UserService;
 public class HomeController {
 	
 	@Autowired
-//	UserService ser;
+	UserService ser;
 	
 	@GetMapping("/")
 	public String showIndexPage() {
@@ -25,15 +26,26 @@ public class HomeController {
 	}
 	
 	@GetMapping("signup")
-	public String showSignup(ModelMap m) {
-		signUp_bean sub = new signUp_bean();
-		m.addAttribute("usersignup", sub);
+	public String showSignup() {
 		return "User/signup";
 	}
 	
 	@PostMapping("formsubmit")
-	public String StoreSignupData(@ModelAttribute("usersignup")signUp_bean sub,ModelMap m,Model m1) {
-//		boolean flag= ser.StoreUserData(sub);
+	public String StoreSignupData(@RequestParam("fname")String fname,@RequestParam("lname")String lname,@RequestParam("email")String email,@RequestParam("city")String city,@RequestParam("pincode")Integer pincode,@RequestParam("userid")String userid,@RequestParam("pass")String pass,Model m) {
+		signUp_bean sub = new signUp_bean();
+		sub.setFname(fname);
+		sub.setLname(lname);
+		sub.setEmail(email);
+		sub.setCity(city);
+		sub.setPincode(pincode);
+		sub.setUserid(userid);
+		sub.setPass(pass);
+		boolean flag= ser.StoreUserData(sub);
+		if(flag)
+			m.addAttribute("message", "Success");
+		else
+			m.addAttribute("message", "Failure");
+		
 		return "index";
 	}
 }
