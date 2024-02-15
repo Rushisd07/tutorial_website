@@ -15,14 +15,17 @@
    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
    
    <context:component-scan base-package="com.controllers"/>
+   <context:component-scan base-package="com.service"/>
+   <context:component-scan base-package="com.dao"/>
    <context:annotation-config/>
    <context:property-placeholder location="classPath:db.properties"/>
    <mvc:resources location="/pages/images/" mapping="/images/**"/>
    <mvc:resources location="/pages/css/" mapping="/css/**"/>
    <mvc:annotation-driven/>
+   <tx:annotation-driven transaction-manager="tm"/>
    
-<!-- 
-   //Bean for datasource
+
+   <!-- Bean for datasource-->
    <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
    		<property name="driverClassName" value="${db.class}"/>
    		<property name="url" value="${db.url}"/>
@@ -30,10 +33,10 @@
    		<property name="password" value="${db.password}"/>   		
    </bean>
 
-   //bean for session factory
+   <!-- bean for session factory-->
    <bean id="sf" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
    		<property name="dataSource" ref="ds"/>
-   		<property name="packagesToScan" value="com.controllers"/>
+   		<property name="packagesToScan" value="com.entity"/>
    		<property name="hibernateProperties">
    			<props>
    				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</prop>
@@ -43,12 +46,11 @@
    		</property>
    </bean>
    
-   //Bean for Transaction Manager
+   <!-- Bean for Transaction Manager-->
    <bean id="tm" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
    		<property name="sessionFactory" ref="sf"/>
    </bean>
 
--->   
 
    <!-- Bean for view Resolver -->
    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
