@@ -66,9 +66,9 @@
 	<jsp:include page="/pages/header.jsp"/>
 <div class="row">
 	<div class="col-12">
-  <h2>Create Account</h2>
 
   <form action="formsubmit">
+	  <h2>Create Account</h2>
         *Enter First Name :<input type="text" name="fname" required/><br>
         *Enter Last Name :<input type="text" name="lname" required/><br>
         *Enter Email :<input type="text" name="email" required/><br>

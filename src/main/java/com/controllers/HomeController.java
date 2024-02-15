@@ -57,7 +57,7 @@ public class HomeController {
 	@GetMapping("admin")
 	public String adminVerify(@RequestParam("adminid")String adminid,@RequestParam("pass")String pass,Model m) {
 		if(adminid.equals("Malak") && pass.equals("main")) {
-			return "admin/adminlogin";
+			return "admin/admindashboard";
 		}
 		else {
 			m.addAttribute("key", "Failure, Try Again");

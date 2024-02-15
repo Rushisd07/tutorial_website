@@ -21,7 +21,7 @@
 		  	<div class="col-8" style="align-content: center;">
 		  		<ul class="nav justify-content-end">
 				  <li class="nav-item">
-				    <a class="nav-link active" aria-current="page" href="index">Home</a>
+				    <a class="nav-link active" aria-current="page" href="#">Home</a>
 				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link" href="login">Student</a>
