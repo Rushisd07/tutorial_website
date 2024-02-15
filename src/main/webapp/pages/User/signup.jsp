@@ -63,18 +63,25 @@
 </style>
 </head>
 <body>
+<div class="row">
+	<div class="col-12">
+		<jsp:include page="/pages/header.jsp"/>
   <h2>Create Account</h2>
 
   <form action="formsubmit">
-        Enter First Name :<input type="text" name="fname" /><br>
-        Enter Last Name :<input type="text" name="lname" /><br>
-        Enter Email :<input type="text" name="email" /><br>
-        Enter City :<input type="text" name="city" /><br>
-        Enter Pincode :<input type="number" name="pincode" /><br>
-        Enter UserID :<input type="text" name="userid" /><br>
-        Enter Password :<input type="password" name="pass" /><br>
+        *Enter First Name :<input type="text" name="fname" required/><br>
+        *Enter Last Name :<input type="text" name="lname" required/><br>
+        *Enter Email :<input type="text" name="email" required/><br>
+        *Enter City :<input type="text" name="city" required/><br>
+        *Enter Pin-code :<input type="number" name="pincode" required/><br>
+        *Enter UserID :<input type="text" name="userid" required/><br>
+        *Enter Password :<input type="password" name="pass" required /><br>
     	<input type="submit" value=" SIGN UP "><br>
-        <a href="login.html">Already have an account? Login In</a>	
+        <a href="login">Already have an account? Login In</a>	
   </form>
+	</div>
+
+</div>
+	
 </body>
 </html>

@@ -12,7 +12,6 @@
 <body>    
     <div class="container-fluid">	
 		<nav class="navbar bg-body-tertiary" style="display: block">
-		  
 		  <div class="row">
 		  	<div class="col-3">
 		  		<a class="navbar-brand" href="#">
@@ -22,10 +21,10 @@
 		  	<div class="col-8" style="align-content: center;">
 		  		<ul class="nav justify-content-end">
 				  <li class="nav-item">
-				    <a class="nav-link active" aria-current="page" href="pages/masterfile.jsp">Home</a>
+				    <a class="nav-link active" aria-current="page" href="pages/mainpage.jsp">Home</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="#">Student</a>
+				    <a class="nav-link" href="signup">Student</a>
 				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link" href="#">Admin Login</a>
