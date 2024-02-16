@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<jsp:include page="/pages/header.jsp"/>
+<jsp:include page="userheader.jsp"/>
 <h3 align="center"><b>Student Dashboard</b></h3>
 
 </body>
