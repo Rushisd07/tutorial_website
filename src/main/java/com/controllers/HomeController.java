@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.bean.signUp_bean;
+import com.entity.Signup_EB;
 import com.service.UserService;
 
 @Controller
@@ -62,6 +63,17 @@ public class HomeController {
 		else {
 			m.addAttribute("key", "Failure, Try Again");
 			return "admin/adminlogin";
+		}
+	}
+	
+	@GetMapping("userlogin")
+	public String verifyuser(@RequestParam("userid")String userid,@RequestParam("pass")String pass,Model m) {
+		if(ser.RetrieveUser(userid,pass)) {
+			return "User/studentdashboard";
+		}
+		else {
+			m.addAttribute("key", "Failure, Try Again");
+			return "User/login";
 		}
 	}
 }
