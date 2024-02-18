@@ -18,5 +18,11 @@ public class UserService_C implements UserService{
 	public boolean StoreUserData(signUp_bean sub) {
 		return dao.StoreUserData(sub);
 	}
+
+	@Override
+	@Transactional
+	public boolean RetrieveUser(String userid,String pass) {
+		return dao.RetrieveUser(userid,pass);
+	}
 	
 }

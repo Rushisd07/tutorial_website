@@ -60,6 +60,13 @@
         color: #007bff;
         text-decoration: none;
     }
+    
+    .failure-message {
+    text-align: center;
+    margin-top: 10px;
+    color: #dc3545; /* Red color for failure message */
+    font-weight: bold;
+	}
 </style>
 </head>
 <body>
@@ -68,7 +75,7 @@
 	<div class="col-12">
 
 
-  <form action="stddashboard">
+  <form action="userlogin">
   <h2>Student Login</h2>
         *Enter UserID :<input type="text" name="userid" required/><br>
         *Enter Password :<input type="password" name="pass" required /><br>

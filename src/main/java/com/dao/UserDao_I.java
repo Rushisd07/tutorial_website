@@ -5,5 +5,6 @@ import com.bean.signUp_bean;
 public interface UserDao_I {
 	
 	public boolean StoreUserData(signUp_bean sub);
+	public boolean RetrieveUser(String userid,String pass); 
 	
 }
