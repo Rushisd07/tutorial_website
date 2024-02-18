@@ -11,7 +11,7 @@
         <!--header starts-->
             <div class="row mycontainer" style="background-color: rgb(128, 230, 255);">
                 <div>
-                    <img src="images/vev.png" height="150px" width="150px"/>
+                    <img src="/images/vev.png" height="150px" width="150px"/>
                 </div>
                 <div>
                     <h1 align="center" style="margin-top: 15%;">Exception Handling</h1>
@@ -46,7 +46,7 @@
     <b> Unchecked Exceptions </b> 
                 - The unchecked exceptions are just opposite to the checked exceptions. 
                 - The compiler will not check these exceptions at compile time. 
-                - In simple words, if a program throws an unchecked exception, and even if we didnâ€™t handle or declare it, 
+                - In simple words, if a program throws an unchecked exception, and even if we did n€ot handle or declare it, 
                   the program would not give a compilation error.
 
     
@@ -75,18 +75,19 @@
         - The throws keyword is used in a method signature.
 
         
-<b> Difference between final vs finaly vs finalize </b> 
+<b> Difference between final vs finally vs finalize </b> 
 </pre>
         <img src="images/Difference Between Final, finally, Finalize.jpg" height="50%" width="70%" >
 <pre class="para">
 
-<b> Differnce between Checked Exception vs Unchecked Exception </b>
+<b> Difference between Checked Exception vs Unchecked Exception </b>
 
+</pre>
 <img src="images/Checked and Unchecked Exception.jpg" height="50%" width="70%">
 
 
 
-</pre>
+
 </div>
 </div>
 </body>
