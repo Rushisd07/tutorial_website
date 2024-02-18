@@ -22,14 +22,15 @@
    <mvc:resources location="/pages/css/" mapping="/css/**"/>
    <mvc:annotation-driven/>
    <tx:annotation-driven transaction-manager="tm"/>
+   <context:property-placeholder location="classpath:db.properties"/>
    
 
    <!-- Bean for datasource-->
    <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-   		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
-   		<property name="url" value="jdbc:mysql://localhost:3306/tutorial_website?useSSL=false"/>
-   		<property name="username" value="root"/>
-   		<property name="password" value="root"/>   		
+   		<property name="driverClassName" value="${db.class}"/>
+   		<property name="url" value="${db.url}"/>
+   		<property name="username" value="${db.username}"/>
+   		<property name="password" value="${db.password}"/>   		
    </bean>
 
    <!-- bean for session factory-->
