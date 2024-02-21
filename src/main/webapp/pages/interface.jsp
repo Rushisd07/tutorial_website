@@ -55,7 +55,7 @@
      A class can extend another class similar to this an interface can extend another interface.
      But only a class can extend to another interface.
 </pre>
-<img src="images/Interface.jpg" alt="Relation class and interface" width="100%" height="100%">
+<img src="images/Interface.jpg" alt="Relation class and interface">
     
 
 </div>

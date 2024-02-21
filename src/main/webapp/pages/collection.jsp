@@ -30,7 +30,7 @@
         - Objects can be wrapper classes / custom defined objects 
         - Collection is a framework that consists of interfaces and classes that provides easy management of group of objects. 
         - Collection basically grows and shrinks dynamically.
-        - Collection has predefined API's(Functionalites). 
+        - Collection has predefined API's(Functionalities). 
         - Collection is interface.
         - Collections is class.
 
@@ -44,7 +44,7 @@
 <b>Advantages of Collection </b>
         - Flexibility
         - Efficiency
-        - Reusability    
+        - Re-usability    
     
 <b>Disadvantages of Collection </b>
         - Complexity
@@ -53,19 +53,19 @@
 
 <b> Difference between Array and Collection </b>
 </pre>
-    <img src="images/Array vs Collection.jpg" height="50%" width="70%" >
+<img src="images/Array vs Collection.jpg">
 <pre class="para">    
 <b> Interfaces in Collection </b>
 </pre>
-        <img src="images/Collection.jpg" height="100%" width="100%" >
+<img src="images/Collection.jpg">
 <pre class="para">
         <b>List(Interface)</b>  
 	
 	        - Use case:	    - allows duplicates							
-				            - Order is gauranteed							
+				            - Order is guaranteed							
  			
 	        - Can Used in:	- banking transactions			
-				            - telecom appl  -- call logs			
+				            - telecom application  -- call logs			
 			
 		- List is implemented by Classes: 
                             ArrayList(C)   				LinkedList(C)				
@@ -84,16 +84,16 @@
     		            HashSet(Mostly used/less heavy)(C)	    	TreeSet(C)	 		    LinkedHashSet(C)
                             - no order				    - guarantees order		        - retain the insertion order    
 
-<b>Map(Interface)(Powerfull)</b>
+<b>Map(Interface)(Powerful)</b>
 
 		- widely used
-		- Use case telecom application ,e-commerce, Addhar , (ID remains same means key)
-		- Map conatin key/value
+		- Use case telecom application ,e-commerce, Adhar , (ID remains same means key)
+		- Map contain key/value
 		- Key/value are Any Objects
-		- Key is unipue
+		- Key is unique
 		- Values can be duplicated
 </pre>
-<img src="images/Mapp.jpg" height="100%" width="100%" >
+<img src="images/Mapp.jpg" width="50%">
 <pre class="para">
                 - Map is implemented by Classes:
 								        MAP
@@ -101,8 +101,7 @@
         
                 - Example :
 </pre>
-<img src="images/MAP.png" height="50%" width="50%" >
-
+<img src="images/MAP.png" height="500px">
 <pre class="para">
 <b>Note </b>
 interface Map{

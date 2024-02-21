@@ -2,16 +2,19 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-    <title>
-        Exception Handling
-    </title>
+    <title>Exception Handling</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="images/vev.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
         <!--header starts-->
             <div class="row mycontainer" style="background-color: rgb(128, 230, 255);">
                 <div>
-                    <img src="/images/vev.png" height="150px" width="150px"/>
+                    <img src="images/vev.png" height="150px" width="150px"/>
                 </div>
                 <div>
                     <h1 align="center" style="margin-top: 15%;">Exception Handling</h1>
@@ -34,11 +37,11 @@
     
         - All exception and error types are subclasses of the class Throwable, which is the base class of the hierarchy.
 </pre>   
-    <img src="images/Exception-Handling.png" height="50%" width="70%" >    
+    <img src="images/Exception-Handling.png">    
 <pre class="para">   
 <b> Types of Exception </b>
 </pre>
-    <img src="images/Types of Exception.png" height="50%" width="70%" >    
+    <img src="images/Types of Exception.png" >    
 <pre class="para">
     <b> Checked Exception </b>
                 - Checked exceptions are called compile-time exceptions because these exceptions are checked at compile-time by the compiler.
@@ -77,13 +80,13 @@
         
 <b> Difference between final vs finally vs finalize </b> 
 </pre>
-        <img src="images/Difference Between Final, finally, Finalize.jpg" height="50%" width="70%" >
+        <img src="images/Difference Between Final, finally, Finalize.jpg">
 <pre class="para">
 
 <b> Difference between Checked Exception vs Unchecked Exception </b>
 
 </pre>
-<img src="images/Checked and Unchecked Exception.jpg" height="50%" width="70%">
+<img src="images/Checked and Unchecked Exception.jpg">
 
 
 

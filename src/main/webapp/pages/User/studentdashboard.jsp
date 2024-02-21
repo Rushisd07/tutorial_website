@@ -12,7 +12,8 @@
 <body>
 
 <jsp:include page="userheader.jsp"/>
-<h3 align="center"><b>Welcome Student</b></h3>
+<h2 align="center"><b>Welcome Student</b></h2>
+<jsp:include page="syllabus.jsp"/>
 
 
 

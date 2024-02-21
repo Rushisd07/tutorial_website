@@ -49,7 +49,6 @@
     </style>
 </head>
 <body>
-<jsp:include page="userheader.jsp"/>
     <div class="container-full">
 	    <div class="sidebar">
             <div class="topic" onclick="showExplanation(1)">Interview Questions</div>
