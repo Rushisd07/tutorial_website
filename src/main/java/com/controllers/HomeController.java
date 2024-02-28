@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.bean.signUp_bean;
-import com.entity.Signup_EB;
+import com.bean.topic.topic;
 import com.service.UserService;
 
 @Controller
@@ -75,5 +75,31 @@ public class HomeController {
 			m.addAttribute("key", "Failure, Try Again");
 			return "User/login";
 		}
+	}
+	
+	@GetMapping("topicForm")
+	public String showTopicForm() {
+		return "admin/topic/topicform";
+	}
+	
+	@GetMapping("insert_topic")
+	public String insertTopic(@RequestParam String title,@RequestParam String description,Model m) {
+		topic tp = new topic();
+		tp.setTitle(title);
+		tp.setDescription(description);
+		boolean flag= ser.StoreTopic(tp);
+		if(flag) {
+			m.addAttribute("key", "Success");
+			return "admin/admindashboard";
+		}
+		else {
+			m.addAttribute("key", "Failure");
+			return "admin/admindashboard";
+		}
+	}
+	
+	@GetMapping("home")
+	public String home() {
+		return "redirect:/";
 	}
 }

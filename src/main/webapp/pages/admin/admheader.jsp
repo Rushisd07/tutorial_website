@@ -26,7 +26,7 @@
 				</ul>
 		  	</div>
 		  	<div class="col-1">
-		  		<button type="button" class="btn btn-success"><a class="nav-link" href="User/login.jsp">Logout</a></button>
+		  		<button type="button" class="btn btn-success"><a class="nav-link" href="home">Logout</a></button>
 		  	</div>
 		  </div>
 		</nav>	

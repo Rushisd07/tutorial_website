@@ -8,7 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.bean.signUp_bean;
+import com.bean.topic.topic;
 import com.entity.Signup_EB;
+import com.entity.topic.topic_Bean;
 
 
 @Repository("dao")
@@ -55,6 +57,22 @@ public class UserDao_C implements UserDao_I{
 				e.printStackTrace();
 				return false;
 			}
+	}
+
+	@Override
+	public boolean StoreTopic(topic tp) {
+		try {
+				Session s = sf.getCurrentSession();
+				topic_Bean tpe = new topic_Bean();
+				tpe.setTitle(tp.getTitle());
+				tpe.setDescription(tp.getDescription());
+				s.persist(tpe);
+				
+			}catch (Exception e) {
+				e.printStackTrace();
+				return false;
+			}
+		return true;
 	}
 
 }

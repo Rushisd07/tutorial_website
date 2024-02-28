@@ -10,5 +10,7 @@
 
 <jsp:include page="admheader.jsp"/>
 <h3 align="center"><b>Admin Dashboard</b></h3>
+<a href="topicForm"> Add a Topic </a>
+${key}
 </body>
 </html>
