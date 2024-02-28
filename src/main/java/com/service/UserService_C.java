@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.bean.signUp_bean;
 import com.bean.topic.topic;
 import com.dao.UserDao_I;
+import com.entity.topic.topic_Bean;
 
 @Service("ser")
 public class UserService_C implements UserService{
@@ -30,6 +31,12 @@ public class UserService_C implements UserService{
 	@Transactional
 	public boolean StoreTopic(topic tp) {
 		return dao.StoreTopic(tp);
+	}
+
+	@Override
+	@Transactional
+	public topic_Bean retrieveTopic(int id) {
+		return dao.retrieveTopic(id);
 	}
 	
 }

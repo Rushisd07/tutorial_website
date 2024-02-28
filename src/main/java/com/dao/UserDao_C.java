@@ -75,4 +75,13 @@ public class UserDao_C implements UserDao_I{
 		return true;
 	}
 
+	@Override
+	public topic_Bean retrieveTopic(int id) {
+		Session s = sf.getCurrentSession();
+		Query<topic_Bean> q = s.createQuery("FROM topic_Bean WHERE id =:id ", topic_Bean.class);
+        q.setParameter("id", id);
+        topic_Bean t1 = q.uniqueResult();
+		return t1;
+	}
+
 }

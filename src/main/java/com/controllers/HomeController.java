@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.bean.signUp_bean;
 import com.bean.topic.topic;
+import com.entity.topic.topic_Bean;
 import com.service.UserService;
 
 @Controller
@@ -101,5 +102,13 @@ public class HomeController {
 	@GetMapping("home")
 	public String home() {
 		return "redirect:/";
+	}
+	
+	@GetMapping("trail")
+	public String trail(@RequestParam int id,Model m) {
+		 topic_Bean topic = ser.retrieveTopic(id);
+		 m.addAttribute("topic", topic);
+		return "trail";
+
 	}
 }

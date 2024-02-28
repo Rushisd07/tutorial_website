@@ -11,6 +11,8 @@
 <jsp:include page="admheader.jsp"/>
 <h3 align="center"><b>Admin Dashboard</b></h3>
 <a href="topicForm"> Add a Topic </a>
+<a href="trail?id=26"> Open a Topic </a>
+${msg}
 ${key}
 </body>
 </html>
